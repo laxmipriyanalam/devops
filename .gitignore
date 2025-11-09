@@ -1,0 +1,25 @@
+# Node dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs
+*.log
+*.out
+
+# Environment variables
+.env
+
+# Build / temp
+dist/
+coverage/
+
+# Docker artifacts
+*.pid
+.DS_Store
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp

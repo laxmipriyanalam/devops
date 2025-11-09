@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Ticket Booking App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ticket Booking</h1>
+
+    <section id="events-section">
+      <h2>Events</h2>
+      <div id="events"></div>
+    </section>
+
+    <section id="booking-section">
+      <h2>Book Tickets</h2>
+      <form id="booking-form">
+        <label>
+          Name
+          <input type="text" id="name" required />
+        </label>
+        <label>
+          Event
+          <select id="event-select"></select>
+        </label>
+        <label>
+          Seats
+          <input type="number" id="seats" min="1" value="1" required />
+        </label>
+        <button type="submit">Book</button>
+      </form>
+      <div id="booking-msg" class="msg"></div>
+    </section>
+
+    <section id="bookings-section">
+      <h2>Bookings</h2>
+      <div id="bookings"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
